@@ -1,25 +1,21 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import laptop from "../assets/laptop.jpg"
+import laptop from "../assets/laptop.jpg";
 
 const Main = () => {
   return (
-    <div id="main">
-      <img
-        className="w-full h-screen object-cover"
-        src={laptop}
-        alt=""
-      />
-      <div className="w-full h-screen absolute top-40 left-[15%] ">
-        <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
-          <h1 className="sm:txt-5xl text-4xl font-bold text-black-800">Scheck Jah</h1>
-          <h2 className="flex sm:text-3xl text-2xl pt-4 text-black-800">
-            
+    <div id="main" className="relative">
+      <img className="w-full h-screen object-cover" src={laptop} alt="laptop" />
+      <div className="w-full h-screen absolute top-40">
+        <div className="max-w-[600px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center pl-4 pr-4"> {/* Adjusted padding for smaller screens */}
+          <h1 className="sm:text-5xl text-3xl font-bold text-white"> {/* Reduced font size for small screens */}
+            Scheck Jah
+          </h1>
+          <h2 className="flex sm:text-3xl text-xl pt-4 text-white whitespace-nowrap overflow-hidden"> {/* Adjusted text size and added overflow handling */}
             <TypeAnimation
               sequence={[
-                // Same substring at the start will only be typed out once, initially
                 "Web Developer",
-                3000, // wait 1s before replacing "Mice" with "Hamsters"
+                3000,
                 "Coding Bootcamp Graduate",
                 3000,
                 "Tech-Enthusiast",
@@ -27,7 +23,13 @@ const Main = () => {
               ]}
               wrapper="div"
               speed={60}
-              style={{ fontSize: "1em", paddingLeft: '10px'  }}
+              style={{
+                fontSize: "inherit", // Ensures it inherits the size from the parent
+                paddingLeft: "15px",
+                whiteSpace: "nowrap",
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+              }}
               repeat={Infinity}
             />
           </h2>
