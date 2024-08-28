@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import{AiOutlineMenu, AiOutlineHome, AiOutlineProject, AiOutlineMail} from "react-icons/ai"
 import {BsPerson} from "react-icons/bs"
 import {GrProjects} from 'react-icons/gr'
+import Resume from '../assets/Resume.pdf'
+
 const SideNav = () => {
 
     const [nav, setNav] = useState(false);
@@ -49,7 +51,7 @@ const SideNav = () => {
                         <a href='#projects' className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-125 ease-in duration-300 '>
                             <AiOutlineProject size={20}/>
                         </a>
-                        <a href='https://docs.google.com/document/d/1CqfmO8q1SGhlsg4HXO8dXNYYtrBJC7mqkomKtmLitXk/edit#heading=h.ymi089liagec' className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-125 ease-in duration-300 '>
+                        <a href={Resume} className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-125 ease-in duration-300 '>
                             <BsPerson size={20}/>
                         </a>
                         <a href='#contact' className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-125 ease-in duration-300 '>
