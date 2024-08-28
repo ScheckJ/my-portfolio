@@ -29,7 +29,7 @@ const SideNav = () => {
                         <AiOutlineProject size={20} />
                         <span className='pl-4'>Projects</span>
                     </a>
-                    <a onClick={handleNav} href='https://docs.google.com/document/d/1CqfmO8q1SGhlsg4HXO8dXNYYtrBJC7mqkomKtmLitXk/edit#heading=h.ymi089liagec' className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
+                    <a onClick={handleNav} href={Resume} className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
                         <BsPerson size={20} />
                         <span className='pl-4'>Resume</span>
                     </a>
