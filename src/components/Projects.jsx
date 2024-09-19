@@ -16,10 +16,10 @@ const Projects = () => {
         link='https://nmahban.github.io/swdatapad/'/>
         <ProjectItem img={SN} title='ScheckNavi'
         tech='React, GraphQL, Mongoose'
-        link='https://github.com/ScheckJ/shecknavi' />
+        link='https://shecknavi-r329.onrender.com/' />
         <ProjectItem img={SB} title='Sound-Boarder'
         tech='Express.js, Handlebars, Sequelize' 
-        link='https://github.com/ScheckJ/Sound-Boarder'/>
+        link='https://sound-boarder.onrender.com/'/>
         <ProjectItem 
         img={ET}
         title='Employee Tracker'
